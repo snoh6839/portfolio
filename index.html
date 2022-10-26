@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width height=device-height">
+    <title>one page scroll</title>
+    <link rel="stylesheet" href="./css/initial.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script type="text/javascript" src="./js/jquery.min.js"></script>
+    <script type="text/javascript" src="./js/pagescrol.js"></script>
+    <script type="text/javascript" src="./js/poplink.js"></script>
+    <script type="text/javascript" src="./js/comon.js"></script>
+    <link href="./img/favicon.ico" rel="icon" type="image/x-icon" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <div class="whole-wrap">
+
+      <section class="slide" data-bg="#ffd95c" id="screen1">
+        <h1>Welcome To My Portfolio page</h1>
+        <button class="btn"><span>Hello, I'm Subin Noh</span></button>
+        <div class="box">
+          <div class="circle"></div>
+        </div>
+        <nav>
+          <div class="logo">SNOH</div>
+          <ul class="nav">
+            <li><a href="#screen1">Home</a></li>
+            <li><a href="#screen2">Projects</a></li>
+            <li><a href="#screen3">About</a></li>
+            <li><a href="#screen4">contact</a></li>
+          </ul>
+        </nav>
+      </section>
+
+      <section class="slide" data-bg="#a873e8" id="screen2">
+        <div class="title wrap">
+          <h2>Projects</h2>
+        </div>
+        <div class="wrap">
+          <a href="#pop_info_1" class="btn_open">
+            라이트 노벨 프로젝트
+            <img class="pimg" src="./img/fix-project001.png" alt="프로젝트1" data-animated="./img/project001.gif" data-static="./img/fix-project001.png">
+            이 프로젝트 알아보기
+          </a>
+          <div id="pop_info_1" class="pop_wrap" style="display:none;">
+            <div class="pop_inner">
+              <button class="btn_close">x</button>
+              <p class="dsc">이 프로젝트는 html5 / css3 / javascript 로 구현되어있습니다.<br>커서의 변경, 실시간 시간 확인, 자바스크립트 랜덤로직 등을<br>재미있게 표현하기 위해 라이트 노벨형식을 사용하였습니다.<br>간단한 선택지가 주어집니다.</p>
+              <button class="git_1 position" onclick="git1()">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <i class="fa fa-github" style="font-size:16px"></i>코드
+              </button>
+              <button type="button" class="position" onclick="others1()">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                실행
+              </button>
+
+            </div>
+          </div>
+        </div>
+        <div class="wrap">
+          <a href="#pop_info_2" class="btn_open">
+            유튜브 영상페이지 클론코딩
+            <img class="pimg" src="./img/fix-project002.png" alt="프로젝트2" data-animated="./img/project002.gif" data-static="./img/fix-project002.png">
+            이 프로젝트 알아보기
+          </a>
+          <div id="pop_info_2" class="pop_wrap" style="display:none;">
+            <div class="pop_inner">
+              <button class="btn_close">x</button>
+              <p class="dsc">이 프로젝트는 html5 / css3 위주로 구현된 반응형 사이트입니다.<br>제목 토글을 위한 javascript가 조금 포함되어 있습니다.<br>모바일 디자인이 먼저 들어가고 점차 늘려주는 형식의 반응형입니다.</p>
+              <button class="git_1 position" onclick="git2()">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <i class="fa fa-github" style="font-size:16px"></i>코드
+              </button>
+              <button type="button" class="position" onclick="others2()">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                실행
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="wrap">
+          <a href="#pop_info_3" class="btn_open">
+            쇼핑몰 프로젝 작업중입니다.
+            <img class="pimg" src="./img/project003.png" alt="프로젝트3">
+            이 프로젝트 알아보기
+          </a>
+          <div id="pop_info_3" class="pop_wrap" style="display:none;">
+            <div class="pop_inner">
+              <p class="dsc">이 프로젝트는아직 미정 입니다.</p>
+              <button class="git_1 position" onclick="git1()">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                코드보기
+              </button>
+              <button type="button" class="btn_close position">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                팝업닫기
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="wrap">
+          <a href="#pop_info_4" class="btn_open">
+            미정 프로젝트
+            <img class="pimg" src="./img/project004.png" alt="프로젝트4">
+            이 프로젝트 알아보기
+          </a>
+          <div id="pop_info_4" class="pop_wrap" style="display:none;">
+            <div class="pop_inner">
+              <p class="dsc">이 프로젝트는아직 미정 입니다.</p>
+              <button class="git_1 position" onclick="git1()">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                코드보기
+              </button>
+              <button type="button" class="btn_close position">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                팝업닫기
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="wrap">
+          <a href="#pop_info_5" class="btn_open">
+            미정 프로젝트
+            <img class="pimg" src="./img/project005.png" alt="프로젝트5">
+            이 프로젝트 알아보기
+          </a>
+          <div id="pop_info_5" class="pop_wrap" style="display:none;">
+            <div class="pop_inner">
+              <p class="dsc">이 프로젝트는아직 미정 입니다.</p>
+              <button class="git_1 position" onclick="git1()">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                코드보기
+              </button>
+              <button type="button" class="btn_close position">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                팝업닫기
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="wrap">
+          <a href="#pop_info_6" class="btn_open">
+            미정 프로젝트
+            <img class="pimg" src="./img/project006.png" alt="프로젝트6">
+            이 프로젝트 알아보기
+          </a>
+          <div id="pop_info_6" class="pop_wrap" style="display:none;">
+            <div class="pop_inner">
+              <p class="dsc">이 프로젝트는아직 미정 입니다.</p>
+              <button class="git_1 position" onclick="git1()">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                코드보기
+              </button>
+              <button type="button" class="btn_close position">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                팝업닫기
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="slide" data-bg="#5d7bd5" id="screen3">
+        <h2>Skills</h2>
+        <div class="item-container">
+          <div class="items">
+            <img src="./img/html5.png" alt="html5">
+            <div class="inner">
+              familiar
+            </div>
+          </div>
+          <div class="items">
+            <img src="./img/css3.png" alt="css3">
+            <div class="inner">
+              familiar
+            </div>
+          </div>
+          <div class="items">
+            <img src="./img/javascript.png" alt="javascript">
+            <div class="inner">
+              familiar
+            </div>
+          </div>
+          <div class="items">
+            <img src="./img/jquery.png" alt="jquery">
+            <div class="inner">
+              familiar
+            </div>
+          </div>
+          <div class="items">
+            <img src="./img/atom.png" alt="atom">
+            <div class="inner">
+              familiar
+            </div>
+          </div>
+          <div class="items">
+            <img src="./img/visualstudio.png" alt="visualstudio">
+            <div class="inner">
+              tried
+            </div>
+          </div>
+          <div class="items">
+            <img src="./img/figma.png" alt="figma">
+            <div class="inner">
+              tried
+            </div>
+          </div>
+          <div class="items">
+            <img src="./img/photoshop.png" alt="photoshop">
+            <div class="inner">
+              familiar
+            </div>
+          </div>
+          <div class="items">
+            <img src="./img/illustrator.png" alt="illustrator">
+            <div class="inner">
+              tried
+            </div>
+          </div>
+          <div class="items">
+            <img src="./img/comming soon.png" alt="comming soon">
+            <div class="inner">
+              comming soon
+            </div>
+          </div>
+          <div class="items">
+            <img src="./img/comming soon.png" alt="comming soon">
+            <div class="inner">
+              comming soon
+            </div>
+          </div>
+          <div class="items">
+            <img src="./img/comming soon.png" alt="comming soon">
+            <div class="inner">
+              comming soon
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="slide" data-bg="#83ad6c" id="screen4">
+        <div class="name-card">
+          <p class="my-name">S u b i n&nbsp;&nbsp;&nbsp;&nbsp;N o h</p>
+          <div class="line"></div>
+          <div class="phone">
+            <p>Phone</p>
+            <p>010-xxxx-xxxx</p>
+          </div>
+          <div class="e-mail">
+            <p>E-mail</p>
+            <p>snoh6839@mysvc.skagit.edu</p>
+          </div>
+        </div>
+        <form method="post">
+          <h3>send me a message</h3>
+          <div class="inputs-wrapper">
+            <div class="inputbox">
+              <input type="text" id="Name" name="Name" required="">
+              <label for="Name">Name</label>
+            </div>
+            <div class="inputbox">
+              <input type="email" id="Email" name="Name" required="">
+              <label for="Email">Email</label>
+            </div>
+            <div class="contentbox">
+              <div class="inputbox">
+                <input type="text" id="Content" name="Contents">
+                <label for="Content">Content</label>
+              </div>
+              <div class="inputbox">
+                <input type="text">
+              </div>
+              <div class="inputbox">
+                <input type="text">
+              </div>
+            </div>
+          </div>
+          <input type="submit" name="submit" value="submit">
+        </form>
+      </section>
+      <div class="anchor">
+        <a href="#screen1">top</a>
+        <div class="line"></div>
+        <a href="#screen4">bottom</a>
+      </div>
+    </div>
+  </body>
+</html>
