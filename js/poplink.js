@@ -7,9 +7,9 @@ function others1()  {
 }
 
 function git2()  {
-  window.open('https://github.com/SubinNoh/youtube002.git');
+  window.open('https://github.com/snoh6839/youtube.git');
 }
 
 function others2()  {
-  window.open('./portfolio projects/youtube/mobile/youtube002/index.html');
+  window.open('./portfolio projects/youtubeproject/index.html');
 }
