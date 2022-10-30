@@ -3,7 +3,7 @@ function git1()  {
 }
 
 function others1()  {
-  window.open('./portfolio projects/lightNovelProject/index.html');
+  window.open('./portfolioprojects/lightNovelProject/index.html');
 }
 
 function git2()  {
@@ -11,5 +11,13 @@ function git2()  {
 }
 
 function others2()  {
-  window.open('./portfolio projects/youtubeproject/index.html');
+  window.open('./portfolioprojects/youtube01/index.html');
+}
+
+function git3()  {
+  window.open('https://github.com/snoh6839/Davichi.git');
+}
+
+function others3()  {
+  window.open('./portfolioprojects/Davichi/index.html');
 }
