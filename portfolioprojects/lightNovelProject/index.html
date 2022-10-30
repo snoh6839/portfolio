@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>비주얼 노벨 프로젝트</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+</head>
+
+<body>
+  <header>
+    <div class="rollingbanner">
+      <marquee>
+          <p id="nameY"></p>
+      </marquee>
+    </div>
+  </header>
+  <div id="whole-wrapper">
+    <div id="character-wrapper">
+
+    </div>
+    <div id="whoA">
+      <div id="disC">
+        <input type="text" id="fname">
+        <button id="btn" onclick="getText(); parse(++cursor);">알려주기</button>
+      </div>
+    </div>
+    <div id="chat-wrapper">
+      <div id="name">
+        박문대
+      </div>
+      <div id="text-wrapper">
+        <div id="text">
+          텍스트 내용
+        </div>
+
+        <div id="next" onclick="parse(++cursor)">
+          &gt;
+        </div>
+      </div>
+      <div id="setting">
+
+        <span onclick="save()">Quick SAVE</span>
+        <span onclick="load()">Quick Load</span>
+        <span onclick="log()">Log</span>
+        <span><a href="index.html">Return</a></span>
+      </div>
+    </div>
+    <div id="selector-wrapper">
+      <ul id="selector">
+        <li onclick="startTime()">지금 시간좀 알려줄래?</li>
+        <li onclick="randomRecomman()">뭐 먹을지 추천해줄래?</li>
+        <li onclick="whoAreYou()">가위, 바위 ...보!</li>
+      </ul>
+    </div>
+    <div id="selector-wrapper2">
+      <ul id="selector2">
+        <li onclick="selecRe()">응, 그래줄래?</li>
+        <li onclick="parse(++cursor)">아니, 괜찮아</li>
+      </ul>
+    </div>
+  </div>
+
+  <footer>
+    <p class="copy">&copy; Copyright by Korean Students & All Rights Reserved</p>
+  </footer>
+
+
+  <script type="text/javascript" src="./js/common.js">
+
+  </script>
+</body>
+
+</html>
