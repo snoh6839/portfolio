@@ -3,7 +3,7 @@ function git1()  {
 }
 
 function others1()  {
-  window.open('./portfolioprojects/lightNovelProject/index.html');
+  window.open('./portfolio projects/lightNovelProject/index.html');
 }
 
 function git2()  {
@@ -11,7 +11,7 @@ function git2()  {
 }
 
 function others2()  {
-  window.open('./portfolioprojects/youtube01/index.html');
+  window.open('./portfolio projects/youtube01/index.html');
 }
 
 function git3()  {
@@ -19,5 +19,5 @@ function git3()  {
 }
 
 function others3()  {
-  window.open('./portfolioprojects/Davichi/index.html');
+  window.open('./portfolio projects/Davichi/index.html');
 }
