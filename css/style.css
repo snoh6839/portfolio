@@ -208,9 +208,9 @@ border: 5px solid black;}
 .pop_wrap:after{display:inline-block; height:100%;
   vertical-align:middle; content:'';}
 .pop_wrap .pop_inner{display:inline-block; padding:20px 30px; line-height: 19px;
-  background:#333; width:30em; vertical-align:middle; font-size:15px;
+  background:#fff; width:30em; vertical-align:middle; font-size:15px;
 color:#111; }
-.pop_wrap .pop_inner p {margin-bottom: 10px;}
+.pop_wrap .pop_inner p {margin-bottom: 10px; margin-top: 40px;}
 .pop_inner button.btn_close {
   float: right;
   padding: 8px;
