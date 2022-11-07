@@ -210,11 +210,12 @@ border: 5px solid black;}
 .pop_wrap .pop_inner{display:inline-block; padding:20px 30px; line-height: 19px;
   background:#fff; width:30em; vertical-align:middle; font-size:15px;
 color:#111; }
-.pop_wrap .pop_inner p {margin-bottom: 10px; margin-top: 40px;}
+.pop_wrap .pop_inner p {margin-bottom: 10px;}
+
 .pop_inner button.btn_close {
   float: right;
-  padding: 8px;
-  width: 35px; height: 35px;
+  padding: 5px;
+  width: 30px; height: 30px;
   text-align: center;
   border: 1px solid #111;
   background: transparent;
