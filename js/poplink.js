@@ -11,7 +11,7 @@ function git2()  {
 }
 
 function others2()  {
-  window.open('./portfolio projects/youtube01/index.html');
+  window.open('https://snoh6839.github.io/youtube/');
 }
 
 function git3()  {
