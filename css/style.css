@@ -26,7 +26,7 @@ section {
 h2 {color: #111;}
 nav {position: fixed; top: 0; width: 100%;
 min-width: 940px; height: 50px; z-index: 500;
- background-color: #222; color: #fff;}
+ background-color: #000; color: #fff;}
 .logo {display: inline-block; line-height: 50px; font-size: 25px;
 float: left; padding-left: 3em; color: #f2f2f2; cursor: default;}
 .nav {float: right;}
@@ -60,7 +60,7 @@ nav li a:hover, .wrap .btn_open:hover {color: #222;}
   margin: 0;
   padding-left: 12px;
   padding-bottom: 8px;
-  position: fixed;
+  position: absolute;
   color: transparent;
   top:30%;
   left:50%;
@@ -76,7 +76,7 @@ nav li a:hover, .wrap .btn_open:hover {color: #222;}
   height: 100%;
   color: #f2f2f2;
   overflow: hidden;
-  border-right: 2px solid #111;
+  border-right: 2px solid #f2f2f2;
   animation: typing 5s steps(37) 1;
 }
 
@@ -169,16 +169,17 @@ button.btn:hover:after {
   100% {margin-top: 10px; opacity: .5;}
 }
 
+#screen2 {
+  display: flex; flex-direction: column;
+  background-color: #f1f1f1;
+  color: #000;
+}
+
 #screen2 h2 {
   font-size: 36px;
-  color: #111;
   width: 100%;
   text-align: center;
   top: 0;
-}
-
-#screen2 {
-  display: flex; flex-direction: column;
 }
 
  .pro-wrap {
@@ -190,7 +191,6 @@ button.btn:hover:after {
 
 .wrap{
   min-width: 250px; font-weight: bold;  width: 32%;
-
 }
 .pimg {width: 70%; background:#111; display: block; margin: auto;
 border: 5px solid black;}
@@ -311,10 +311,10 @@ color:#111; }
     width: 2px;
     height: 100%;
     background: linear-gradient(360deg,transparent,#03e9f4);
-    animation: animate4 1s linear infinite;
+    animation: bani4 1s linear infinite;
     animation-delay: 0.75s;
 }
-@keyframes animate4{
+@keyframes bani4{
     0%{
         bottom: -100%;
     }
@@ -325,10 +325,12 @@ color:#111; }
 
 #screen3 {
   overflow: auto;
+  background-color: #f1f1f1;
+  color: #000;
 }
 
 #screen3 h2 {position: absolute; text-transform: capitalize; top: 70px;
-font-size: 30px;}
+font-size: 30px; color: #000;}
 
 .item-container {display: grid;
   width: 50%; height: 60%;
@@ -338,7 +340,6 @@ font-size: 30px;}
 .item-container .items {position: relative;}
 .item-container .items .inner {
   width: 100%; height: 100%;
-
 	background-color: #222;
   color: #fff;
 	position: absolute;
@@ -356,59 +357,12 @@ font-size: 30px;}
 .item-container img {width: 100%; height: 100%; object-fit: cover;}
 .item-container img:hover {opacity: 20%;}
 
-/* #screen4 {justify-content: space-around; font-size: 22px;}
-#screen4 form, #screen4 .name-card {border: 1px solid #111; padding: 10px;}
-.contentbox {border: 1px solid #111; background-color: #111;}
-.phone, .e-mail {padding: 10px;}
-.phone p, .e-mail p {display: inline; padding: 5px; }
-.inputs-wrapper {
-  display: flex; flex-direction: column; }
-
-#screen4 .my-name, #screen4 h3 { font-size: 30px; text-transform: uppercase;
-  color: #111; font-weight: bold;}
-.line {border-bottom: 1px solid #111; margin-top: 10px; margin-bottom: 15px;}
-
-#screen4 h3{padding-bottom: 15px;}
-
-.inputbox {
-  position: relative; width: 200px; margin: 15px
-}
-
-.inputbox label {
-  position: absolute;
-  top: 0;
-  left: 5px;
-  color: white;
-  cursor: text;
-}
-
-.inputbox input {
-  width: 100%;
-  min-width: 20em;
-  height: auto;
-  line-height : normal;
-  padding: .8em .5em;
-  border: none;
-  border-bottom: 1px solid #111;
-  background-color: inherit;
-  outline-style: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  color: white;
-}
-
-input[type = submit] {width: 8em; height: 1.8em; border: none;
-background-color: #111; color: #83ad6c; font-size: inherit;
-margin-top: 10px; margin-bottom: 5px; text-transform: uppercase;
-cursor: pointer;} */
 
 .anchor {position: fixed; right: 5em; bottom: 5em;
 display: block; width: 80px; height: 48px; background: rgba(34, 34, 34, .3);
 border-radius: 10%;
 display: flex; flex-direction: column; justify-content: space-around;
 }
-
-.anchor a {color: #111; font-size: 14px; padding: 5px;}
+.anchor a {color: #1a1a1a; font-size: 14px; padding: 5px;}
 .anchor a:hover {color: #fff; font-size: 16px; font-weight: bold;}
 .anchor .line {margin: 0;}

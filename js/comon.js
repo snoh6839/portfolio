@@ -1,16 +1,14 @@
 $(function(){
-//백그라운드 색상 변경
   $(window).scroll(function() {
     var winHeight = $(window).height();
     var scTop = $(this).scrollTop();
+    var goTop = $('.anchor');
 
-    $('.slide').each(function() {
-      var thisOff = $(this).offset();
-      if (thisOff.top <= scTop && scTop < thisOff.top + winHeight) {
-        var bodyBg = $(this).data('bg');
-        $(this).css('background-color',bodyBg);
-      }
-    });
+    if (winHeight - 70 < scTop) {
+      goTop.css('opacity','1');
+    }else {
+      goTop.css('opacity','0');
+    }
   });
 
   var target = document.querySelectorAll('.btn_open');
