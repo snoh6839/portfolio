@@ -19,5 +19,5 @@ function git3()  {
 }
 
 function others3()  {
-  window.open('./portfolio projects/Davichi/index.html');
+  window.open('https://snoh6839.github.io/Davichi/');
 }
