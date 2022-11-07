@@ -11,18 +11,6 @@ $(function(){
         $(this).css('background-color',bodyBg);
       }
     });
-
-
-
-
-//네비 바 고정
-    var navBar = $('nav');
-
-    if (winHeight - 70 < scTop) {
-      navBar.addClass('fixed');
-    }else {
-      navBar.removeClass('fixed');
-    }
   });
 
   var target = document.querySelectorAll('.btn_open');
