@@ -3,7 +3,7 @@ function git1()  {
 }
 
 function others1()  {
-  window.open('./portfolio projects/lightNovelProject/index.html');
+  window.open('https://snoh6839.github.io/lightNovelProject/');
 }
 
 function git2()  {
