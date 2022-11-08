@@ -91,7 +91,7 @@ nav li a:hover, .wrap .btn_open:hover {
 }
 
 #screen1 h1 {
-  font-size: 36px;
+  font-size: 100px;
   min-width: 11px;
   white-space: nowrap;
   margin: 0;
@@ -99,13 +99,13 @@ nav li a:hover, .wrap .btn_open:hover {
   padding-bottom: 8px;
   position: absolute;
   color: transparent;
-  top: 30%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 
 #screen1 h1::before {
-  content: "Welcome To My Portfolio Page ";
+  content: "Hello, I'm Subin.";
   position: absolute;
   top: 0;
   left: 0;
@@ -113,17 +113,22 @@ nav li a:hover, .wrap .btn_open:hover {
   height: 100%;
   color: #f2f2f2;
   overflow: hidden;
-  border-right: 2px solid #f2f2f2;
-  animation: typing 5s steps(37) 1;
+  border-right: 2px solid #000;
+  animation: typing 5s steps(24) 1, blink 1s infinite;
 }
 
 @keyframes typing {
   0% {
     width: 0%;
   }
-
   100% {
     width: 100%;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-right: 2px solid #f2f2f2;
   }
 }
 
@@ -132,7 +137,7 @@ nav li a:hover, .wrap .btn_open:hover {
   min-width: 11px;
   padding-left: 10px;
   padding-bottom: 8px;
-  position: fixed;
+  position: absolute;
   border: none;
   display: block;
   text-align: center;
@@ -140,7 +145,6 @@ nav li a:hover, .wrap .btn_open:hover {
   text-transform: uppercase;
   outline: none;
   overflow: hidden;
-  color: #999;
   font-weight: 700;
   font-size: 15px;
   background-color: #222;
@@ -150,7 +154,11 @@ nav li a:hover, .wrap .btn_open:hover {
   transition: .3s;
 }
 
-#screen1 button:hover {
+#screen1 button a {
+  color: #999;
+}
+
+#screen1 button:hover a {
   color: #111;
 }
 
