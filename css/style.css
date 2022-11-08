@@ -90,16 +90,6 @@ nav li a:hover, .wrap .btn_open:hover {
   overflow: hidden;
 }
 
-.path {
-  fill: none;
-  stroke: #f2f2f2;
-  stroke-width: 3px;
-}
-
-.path1 {
-  stroke-dasharray: 6884;
-}
-
 #screen1 h1 {
   font-size: 36px;
   min-width: 11px;
