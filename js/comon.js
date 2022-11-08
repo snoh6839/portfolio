@@ -6,8 +6,10 @@ $(function(){
 
     if (winHeight - 70 < scTop) {
       goTop.css('opacity','1');
+      $('nav').css('opacity','.5');
     }else {
       goTop.css('opacity','0');
+      $('nav').css('opacity','1');
     }
   });
 

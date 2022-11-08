@@ -292,16 +292,18 @@ button.btn:hover:after {
 .pop_wrap .pop_inner {
   display: inline-block;
   padding: 20px 30px;
+  width: 30em;
+  min-height: 250px;
   line-height: 19px;
   background: #fff;
-  width: 30em;
   vertical-align: middle;
   font-size: 15px;
   color: #111;
+  border: 3px solid #d9d9d9;
 }
 
 .pop_wrap .pop_inner p {
-  margin-bottom: 10px;
+  margin: 20px 0;
 }
 
 .pop_inner button.btn_close {
