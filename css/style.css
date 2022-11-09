@@ -88,6 +88,7 @@ nav li a:hover, .wrap .btn_open:hover {
   background-color: #000;
   box-sizing: border-box;
   overflow: hidden;
+  min-height: 390px;
 }
 
 #screen1 h1 {
@@ -133,10 +134,9 @@ nav li a:hover, .wrap .btn_open:hover {
 }
 
 #screen1 button {
+  top: 75%;
   font-size: 36px;
   min-width: 11px;
-  padding-left: 10px;
-  padding-bottom: 8px;
   position: absolute;
   border: none;
   display: block;
@@ -435,30 +435,33 @@ button.btn:hover:after {
 }
 
 #screen3 {
-  overflow: auto;
+  display: flex;
+  flex-direction: column;
   background-color: #f1f1f1;
   color: #000;
 }
 
 #screen3 h2 {
-  position: absolute;
-  text-transform: capitalize;
-  top: 70px;
-  font-size: 30px;
-  color: #000;
+  font-size: 36px;
+  width: 100%;
+  text-align: center;
+  top: 0;
 }
 
 .item-container {
-  display: grid;
-  width: 50%;
-  height: 60%;
-  grid-template-columns: repeat(4, minmax(20%, auto));
-  grid-template-rows: repeat(3, minmax(40%, auto));
-  grid-gap: 1em;
+  display: flex;
+  gap: 20px 2%;
+  flex-wrap: wrap;
+  position: relative;
+  padding: 40px 10px 10px 10px;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
 }
 
 .item-container .items {
   position: relative;
+  min-width: 150px;
 }
 
 .item-container .items .inner {
