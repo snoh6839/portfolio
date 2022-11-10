@@ -557,34 +557,11 @@ li {
   animation: drawPath1 1s linear, floating 2.2s linear infinite;
 }
 
-svg {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  /* z-index: -1; */
-}
-
-.path2 {
-  stroke: #000;
-  stroke-dasharray: 8190;
-}
-
-.path3 {
-  stroke: #000;
-  stroke-dasharray: 16555;
-}
 
 .drawPath1 {
   animation: drawPath1 3s linear;
 }
 
-.drawPath2 {
-  animation: drawPath2 3s linear;
-}
-
-.drawPath3 {
-  animation: drawPath3 3s linear;
-}
 
 
 @keyframes drawPath1 {
@@ -597,25 +574,6 @@ svg {
 }
 
 
-@keyframes drawPath2 {
-  0% {
-    stroke-dashoffset: 8190;
-  }
-  100% {
-    stroke-dashoffset: 0;
-  }
-}
-
-
-
-@keyframes drawPath3 {
-  0% {
-    stroke-dashoffset: 16555;
-  }
-  100% {
-    stroke-dashoffset: 0;
-  }
-}
 
 @keyframes floating {
   50% {
