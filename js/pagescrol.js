@@ -4,6 +4,12 @@ window.addEventListener("wheel", function(e){
   var page = 1;
   mHtml.animate({scrollTop : 0},10);
 
+window.onload = function () {
+  setTimeout(function () {
+    scrollTo(0,0);
+  }, 100)
+}
+
   $(window).on("wheel", function(e) {
       if(mHtml.is(":animated")) return;
       if(e.originalEvent.deltaY > 0) {
@@ -26,5 +32,4 @@ window.addEventListener("wheel", function(e){
       mHtml.animate({scrollTop : posTop});
 
       var cur_pos = $(this).scrollTop();
-
   })
