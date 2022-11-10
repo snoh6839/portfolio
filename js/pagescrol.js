@@ -7,12 +7,21 @@ window.addEventListener("wheel", function(e){
   $(window).on("wheel", function(e) {
       if(mHtml.is(":animated")) return;
       if(e.originalEvent.deltaY > 0) {
-          if(page == 3) return;
+        if(page == 1){
+          $('.path2').addClass('drawPath2')
+        }else if (page == 2) {
+          $('.path3').addClass('drawPath3')
+        }else if (page == 3) {
+          return;
+        }
           page++;
       } else if(e.originalEvent.deltaY < 0) {
-          if(page == 1) return;
+        if(page == 1){
+          return;
+        }
           page--;
       }
+
       var posTop = (page-1) * $(window).height();
       mHtml.animate({scrollTop : posTop});
 
