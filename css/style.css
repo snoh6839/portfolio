@@ -253,18 +253,21 @@ button.btn:hover:after {
   margin-top: 50px;
   font-family: 'Noto Sans KR', sans-serif;
   display: flex;
-  gap: 20px 2%;
+  justify-content: center;
+  align-items: center;
+  gap: 2%;
   flex-wrap: wrap;
   position: relative;
-  padding: 40px 10px 10px 10px;
+  /* padding: 40px; */
   box-sizing: border-box;
   z-index: 2;
 }
 
 .wrap {
   min-width: 250px;
+  max-width: 450px;
   font-weight: bold;
-  width: 32%;
+  width: 30%;
 }
 
 .pimg {

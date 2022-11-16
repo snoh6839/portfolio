@@ -21,3 +21,11 @@ function git3()  {
 function others3()  {
   window.open('https://snoh6839.github.io/Davichi/');
 }
+
+function git4()  {
+  window.open('https://github.com/snoh6839/gangnam.git');
+}
+
+function others4()  {
+  window.open('https://snoh6839.github.io/gangnam/');
+}
