@@ -83,9 +83,6 @@ nav li a:hover, .wrap .btn_open:hover {
   color: #222;
 }
 
-
-
-
 #screen1 {
   flex-direction: column;
   color: #f2f2f2;
@@ -130,6 +127,7 @@ nav li a:hover, .wrap .btn_open:hover {
   0% {
     width: 0%;
   }
+
   100% {
     width: 100%;
   }
@@ -255,19 +253,18 @@ button.btn:hover:after {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 2%;
   flex-wrap: wrap;
+  gap: 5%;
   position: relative;
-  /* padding: 40px; */
+  padding: 40px;
   box-sizing: border-box;
   z-index: 2;
 }
 
 .wrap {
-  min-width: 250px;
-  max-width: 450px;
   font-weight: bold;
-  width: 30%;
+  width: 25%;
+  max-width: 300px;
 }
 
 .pimg {
@@ -454,6 +451,7 @@ button.btn:hover:after {
 #screen3 {
   display: flex;
   flex-direction: column;
+  align-items: space-btween;
   background-color: #f1f1f1;
   color: #000;
 }
@@ -465,21 +463,59 @@ button.btn:hover:after {
   top: 0;
 }
 
-.item-container {
-  display: flex;
-  gap: 20px 2%;
-  flex-wrap: wrap;
+.tab_menu {
+  width: 90vw;
+  height: 80vh;
+  transform: translateY(15%);
+}
+
+ul.tabs{
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+ul.tabs li{
+  background: none;
+  color: #222;
+  display: inline-block;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 24px;
+  margin-bottom: 50px;
+}
+
+ul.tabs li.current{
+  background: #ededed;
+  color: #222;
+}
+
+ul.tabs li.current:after {
+  content: '';
+  background-color: red;
+  width: 5px;
+  height: 5px;
+  border-radius: 100%;
+  position: absolute;
+}
+
+
+.tab_menu .item-container {
+  display: none;
   position: relative;
-  padding: 40px 10px 10px 10px;
-  box-sizing: border-box;
   align-items: center;
   justify-content: center;
-  z-index: 2;
+  flex-wrap: wrap;
+  gap: 2%;
+  box-sizing: border-box;
+}
+
+.tab_menu .item-container.current {
+  display: flex;
 }
 
 .item-container .items {
   position: relative;
-  min-width: 150px;
+  width: 150px;
   border: 3px solid #d9d9d9;
 }
 
@@ -560,23 +596,19 @@ li {
   animation: drawPath1 1s linear, floating 2.2s linear infinite;
 }
 
-
 .drawPath1 {
   animation: drawPath1 3s linear;
 }
-
-
 
 @keyframes drawPath1 {
   0% {
     stroke-dashoffset: 6884;
   }
+
   100% {
     stroke-dashoffset: 0;
   }
 }
-
-
 
 @keyframes floating {
   50% {

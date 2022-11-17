@@ -56,4 +56,15 @@ $(".pimg").mouseout(function() {
   $(this).attr("src", $(this).data("static"))
 });
 
+
+$('ul.tabs li').click(function(){
+    var tab_id = $(this).attr('data-tab');
+
+    $('ul.tabs li').removeClass('current');
+    $('.item-container').removeClass('current');
+
+    $(this).addClass('current');
+    $("#"+tab_id).addClass('current');
+  })
+
 });
