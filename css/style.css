@@ -4,8 +4,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
 
 html, body {
-  height: 100%;
+  /* height: 100%; */
   scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar {
+    display: none;
+}
+
+
+.progress-container {
+    position: fixed; /*상단 고정*/
+    top: 50px; /*페이지의 최상단에 붙어서 위치*/
+    z-index: 1000; /*페이지의 다른 요소보다 가장 위에 나타나도록 설정*/
+      width: 100%;
+      height: 3px; /* 높이 */
+      background: rgba(255, 255, 255, .8); /* 기본 배경색 */
+}
+
+/* 프로그래스바 디자인 */
+.progress-bar {
+      height: 3px;  /* 높이 */
+      background: #333; /* 색상 */
+      width: 0%;
 }
 
 * {
@@ -23,13 +44,14 @@ body {
   background: #d9d9d9;
   font-size: 18px;
   text-align: center;
-  overflow: hidden;
+  /* overflow: hidden; */
   min-width: 940px;
+
 }
 
 section {
   position: relative;
-  height: 100vh;
+  /* height: 100vh; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -155,6 +177,7 @@ nav li a:hover, .wrap .btn_open:hover {
   background-color: #222;
   padding: 17px 60px;
   margin: 0 auto;
+  bottom: 80px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.20);
   transition: .3s;
 }
@@ -191,50 +214,12 @@ button.btn:hover:after {
   transform: translateX(-9%) translateY(-25%) rotate(45deg);
 }
 
-.box {
-  margin-top: 300px;
-  width: 50px;
-  height: 80px;
-  border: 5px solid white;
-  border-radius: 30px;
-  box-sizing: border-box;
-  position: relative;
-}
-
-.box .circle {
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  background-color: white;
-  margin-left: 10px;
-  margin-top: 10px;
-  animation-name: wheel;
-  animation-duration: 2s;
-  animation-iteration-count: infinite;
-}
-
-@keyframes wheel {
-  0% {
-    margin-top: 10px;
-    opacity: .5;
-  }
-
-  75% {
-    margin-top: 40px;
-    opacity: 1;
-  }
-
-  100% {
-    margin-top: 10px;
-    opacity: .5;
-  }
-}
-
 #screen2 {
   display: flex;
   flex-direction: column;
   background-color: #f1f1f1;
   color: #000;
+
 }
 
 #screen2 h2 {
@@ -242,11 +227,11 @@ button.btn:hover:after {
   width: 100%;
   text-align: center;
   top: 10%;
-  /* margin-bottom: 50px; */
-  position: absolute;
+  margin-top: 80px;
 }
 
 .pro-wrap {
+  max-width: 1400px;
   margin-top: 50px;
   font-family: 'Noto Sans KR', sans-serif;
   display: flex;
@@ -451,21 +436,15 @@ button.btn:hover:after {
   display: flex;
   flex-direction: column;
   align-items: space-btween;
-  background-color: #f1f1f1;
+  background-color: #d9d9d9;
   color: #000;
 }
 
 #screen3 h2 {
   font-size: 36px;
   width: 100%;
-  text-align: center;
-  top: 0;
-}
-
-.tab_menu {
-  width: 90vw;
-  height: 80vh;
-  transform: translateY(15%);
+  /* text-align: center; */
+  margin: 80px auto;
 }
 
 ul.tabs{
@@ -504,18 +483,30 @@ ul.tabs li.current:after {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 2%;
+  gap: 20px 2%;
   box-sizing: border-box;
+  padding-bottom: 50px;
+
 }
 
 .tab_menu .item-container.current {
   display: flex;
+  animation: fadein .5s;
+}
+
+@keyframes fadein {
+    from {
+        opacity: .5;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 .item-container .items {
   position: relative;
   width: 150px;
-  border: 3px solid #d9d9d9;
+  border: 3px solid #ededed;
 }
 
 .item-container .items .inner {
@@ -550,7 +541,7 @@ ul.tabs li.current:after {
 .anchor {
   position: fixed;
   right: 5em;
-  bottom: 5em;
+  bottom: 8em;
   display: block;
   width: 80px;
   height: 48px;
@@ -613,4 +604,14 @@ li {
   50% {
     transform: translate3d(0, 40px, 0);
   }
+}
+
+footer {
+  background-color: #000;
+  color: #fff;
+}
+
+footer p {
+  height: 50px;
+  line-height: 50px
 }

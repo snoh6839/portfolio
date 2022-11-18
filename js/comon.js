@@ -4,7 +4,7 @@ $(function(){
     var scTop = $(this).scrollTop();
     var goTop = $('.anchor');
 
-    if (winHeight - 70 < scTop) {
+    if (610 < scTop) {
       goTop.css('opacity','1');
       $('nav').css('opacity','.5');
     }else {
@@ -65,6 +65,8 @@ $('ul.tabs li').click(function(){
 
     $(this).addClass('current');
     $("#"+tab_id).addClass('current');
+
+
   })
 
 });

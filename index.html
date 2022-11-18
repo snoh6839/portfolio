@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width height=device-height">
-  <title>one page scroll</title>
+  <title>My Portfolio</title>
   <link rel="stylesheet" href="./css/initial.min.css">
   <link rel="stylesheet" href="./css/style.css">
   <script type="text/javascript" src="./js/jquery.min.js"></script>
@@ -17,7 +17,22 @@
 
 <body>
   <div class="whole-wrap">
+    <div class="progress-container">
+      <div class="progress-bar" id="indicator"></div>
+    </div>
+    <script>
+      // 인터넷 스크롤 이동 시 이벤트
+      window.onscroll = function() {
+        createPrograssBar()
+      };
 
+      function createPrograssBar() {
+        var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+        var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        var scrolled = (winScroll / height) * 100;
+        document.getElementById("indicator").style.width = scrolled + "%";
+      }
+    </script>
     <section class="slide" id="screen1">
       <h1>Hello, I'm Subin.</h1>
       <button class="btn"><span><a href="./img" download>Download Resume</a></span></button>
@@ -301,126 +316,126 @@
       <h2>Skills</h2>
       <div class="tab_menu">
         <ul class="tabs">
-          <li class="tab-link current" data-tab="tab-1">language</li>
+          <li class="tab-link" data-tab="tab-1">language</li>
           <li class="tab-link" data-tab="tab-2">helper</li>
           <li class="tab-link" data-tab="tab-3">eiditor</li>
           <li class="tab-link" data-tab="tab-4">api</li>
           <li class="tab-link" data-tab="tab-5">design</li>
-          <li class="tab-link" data-tab="tab-6">all</li>
+          <li class="tab-link current" data-tab="tab-6">all</li>
         </ul>
-        <div id="tab-1" class="item-container current">
-            <div class="items">
-              <img src="./img/html5.png" alt="html5">
-              <div class="inner">
-                html5<br>familiar
-              </div>
+        <div id="tab-1" class="item-container">
+          <div class="items">
+            <img src="./img/html5.png" alt="html5">
+            <div class="inner">
+              html5<br>familiar
             </div>
-            <div class="items">
-              <img src="./img/css3.png" alt="css3">
-              <div class="inner">
-                css3<br>familiar
-              </div>
+          </div>
+          <div class="items">
+            <img src="./img/css3.png" alt="css3">
+            <div class="inner">
+              css3<br>familiar
             </div>
-            <div class="items">
-              <img src="./img/javascript.png" alt="javascript">
-              <div class="inner">
-                javascript<br>familiar
-              </div>
+          </div>
+          <div class="items">
+            <img src="./img/javascript.png" alt="javascript">
+            <div class="inner">
+              javascript<br>familiar
             </div>
+          </div>
         </div>
         <div id="tab-2" class="item-container">
-            <div class="items">
-              <img src="./img/jquery.png" alt="jquery">
-              <div class="inner">
-                jquery<br>familiar
-              </div>
+          <div class="items">
+            <img src="./img/jquery.png" alt="jquery">
+            <div class="inner">
+              jquery<br>familiar
             </div>
-            <div class="items">
-              <img src="./img/sass.png" alt="sass">
-              <div class="inner">
-                sass<br>familiar
-              </div>
+          </div>
+          <div class="items">
+            <img src="./img/sass.png" alt="sass">
+            <div class="inner">
+              sass<br>familiar
             </div>
-            <div class="items">
-              <img src="./img/bootstrap.png" alt="bootstrap">
-              <div class="inner">
-                bootstrap<br>familiar
-              </div>
+          </div>
+          <div class="items">
+            <img src="./img/bootstrap.png" alt="bootstrap">
+            <div class="inner">
+              bootstrap<br>familiar
             </div>
-            <div class="items">
-              <img src="./img/vue.png" alt="vue">
-              <div class="inner">
-                vue.js<br>tried
-              </div>
+          </div>
+          <div class="items">
+            <img src="./img/vue.png" alt="vue">
+            <div class="inner">
+              vue.js<br>tried
             </div>
-            <div class="items">
-              <img src="./img/swiper.png" alt="swiper">
-              <div class="inner">
-                swiper<br>familiar
-              </div>
+          </div>
+          <div class="items">
+            <img src="./img/swiper.png" alt="swiper">
+            <div class="inner">
+              swiper<br>familiar
             </div>
-            <div class="items">
-              <img src="./img/slick.png" alt="slick">
-              <div class="inner">
-                slick<br>familiar
-              </div>
+          </div>
+          <div class="items">
+            <img src="./img/slick.png" alt="slick">
+            <div class="inner">
+              slick<br>familiar
             </div>
-            <div class="items">
-              <img src="./img/tailwind.png" alt="tailwind">
-              <div class="inner">
-                tailwind.css<br>tried
-              </div>
+          </div>
+          <div class="items">
+            <img src="./img/tailwind.png" alt="tailwind">
+            <div class="inner">
+              tailwind.css<br>tried
             </div>
-            <div class="items">
-              <img src="./img/typescript.png" alt="typescript">
-              <div class="inner">
-                typescript<br>tried
-              </div>
+          </div>
+          <div class="items">
+            <img src="./img/typescript.png" alt="typescript">
+            <div class="inner">
+              typescript<br>tried
             </div>
+          </div>
         </div>
         <div id="tab-3" class="item-container">
-            <div class="items">
-              <img src="./img/atom.png" alt="atom">
-              <div class="inner">
-                atom<br>familiar
-              </div>
+          <div class="items">
+            <img src="./img/atom.png" alt="atom">
+            <div class="inner">
+              atom<br>familiar
             </div>
-            <div class="items">
-              <img src="./img/visualstudio.png" alt="visualstudio">
-              <div class="inner">
-                visualstudio<br>tried
-              </div>
+          </div>
+          <div class="items">
+            <img src="./img/visualstudio.png" alt="visualstudio">
+            <div class="inner">
+              visualstudio<br>tried
             </div>
+          </div>
         </div>
         <div id="tab-4" class="item-container">
-            <div class="items">
-              <img src="./img/kakaoapi.png" alt="kakaoapi">
-              <div class="inner">
-                kakaoapi<br>tried
-              </div>
+          <div class="items">
+            <img src="./img/kakaoapi.png" alt="kakaoapi">
+            <div class="inner">
+              kakaoapi<br>tried
             </div>
+          </div>
         </div>
         <div id="tab-5" class="item-container">
-            <div class="items">
-              <img src="./img/figma.png" alt="figma">
-              <div class="inner">
-                figma<br>familiar
-              </div>
+          <div class="items">
+            <img src="./img/figma.png" alt="figma">
+            <div class="inner">
+              figma<br>familiar
             </div>
-            <div class="items">
-              <img src="./img/photoshop.png" alt="photoshop">
-              <div class="inner">
-                photoshop<br>familiar
-              </div>
+          </div>
+          <div class="items">
+            <img src="./img/photoshop.png" alt="photoshop">
+            <div class="inner">
+              photoshop<br>familiar
             </div>
-            <div class="items">
-              <img src="./img/illustrator.png" alt="illustrator">
-              <div class="inner">
-                illustrator<br>familiar
-              </div>
+          </div>
+          <div class="items">
+            <img src="./img/illustrator.png" alt="illustrator">
+            <div class="inner">
+              illustrator<br>familiar
             </div>
+          </div>
         </div>
-        <div id="tab-6" class="item-container">
+        <div id="tab-6" class="item-container current">
           <div class="items">
             <img src="./img/html5.png" alt="html5">
             <div class="inner">
@@ -526,6 +541,10 @@
         </div>
       </div>
     </section>
+    <footer>
+      <p>&copy;All Rights Reserved</p>
+      <p>Designed by Subin Noh</p>
+    </footer>
 
     <ul class="anchor">
       <li><a href="#screen1">top</a></li>
