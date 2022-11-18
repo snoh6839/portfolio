@@ -114,7 +114,7 @@ nav li a:hover, .wrap .btn_open:hover {
   background-color: #000;
   box-sizing: border-box;
   overflow: hidden;
-  min-height: 390px;
+  min-height: 700px;
 }
 
 #screen1 h1 {
@@ -256,8 +256,9 @@ button.btn:hover:after {
   background: #111;
   display: block;
   margin: auto;
-  border: 5px solid black;
+  border-radius: 5%;
 }
+
 
 .pimg+p {
   padding-top: 12px;
@@ -448,6 +449,7 @@ button.btn:hover:after {
 }
 
 ul.tabs{
+
   margin: 0px;
   padding: 0px;
   list-style: none;
@@ -486,7 +488,7 @@ ul.tabs li.current:after {
   gap: 20px 2%;
   box-sizing: border-box;
   padding-bottom: 50px;
-
+  max-width: 1400px;
 }
 
 .tab_menu .item-container.current {

@@ -4,12 +4,12 @@ $(function(){
     var scTop = $(this).scrollTop();
     var goTop = $('.anchor');
 
-    if (610 < scTop) {
+    if (600 < scTop) {
       goTop.css('opacity','1');
-      $('nav').css('opacity','.5');
+      // $('nav').css('opacity','.5');
     }else {
       goTop.css('opacity','0');
-      $('nav').css('opacity','1');
+      // $('nav').css('opacity','1');
     }
   });
 
@@ -34,27 +34,6 @@ $(function(){
 });
 
 $(document).ready(function() {
-  var placeholderTarget = $('.inputbox input');
-
-  //포커스시
-  placeholderTarget.on('focus', function(){
-    $(this).siblings('label').fadeOut('fast');
-  });
-
-  //포커스아웃시
-  placeholderTarget.on('focusout', function(){
-    if($(this).val() == ''){
-      $(this).siblings('label').fadeIn('fast');
-    }
-  });
-
-  //gif hover
-  $(".pimg").mouseover(function() {
-  $(this).attr("src", $(this).data("animated"))
-}),
-$(".pimg").mouseout(function() {
-  $(this).attr("src", $(this).data("static"))
-});
 
 
 $('ul.tabs li').click(function(){
