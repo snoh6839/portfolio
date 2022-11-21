@@ -327,6 +327,7 @@ button.btn:hover:after {
   letter-spacing: 4px;
   overflow: hidden;
   background-color: #222;
+
 }
 
 .position:hover {
@@ -509,7 +510,21 @@ ul.tabs li.current:after {
 .item-container .items {
   position: relative;
   width: 150px;
+  height: 250px;
   border: 3px solid #ededed;
+  background-color: #fff;
+}
+
+.item-container .items:hover {
+  border: 3px solid #2596be;
+}
+
+.item-container .items:hover .inner{
+  opacity: .8;
+}
+
+.item-container .items:hover img {
+  opacity: .4;
 }
 
 .item-container .items .inner {
@@ -528,18 +543,13 @@ ul.tabs li.current:after {
   justify-content: center;
 }
 
-.item-container .items .inner:hover {
-  opacity: .8;
-}
+
 
 .item-container img {
-  width: 100%;
+  width: 90%;
   height: 100%;
-  object-fit: cover;
-}
+  object-fit: contain;
 
-.item-container img:hover {
-  opacity: 20%;
 }
 
 .anchor {
