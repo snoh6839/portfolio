@@ -114,7 +114,8 @@ nav li a:hover, .wrap .btn_open:hover {
   background-color: #000;
   box-sizing: border-box;
   overflow: hidden;
-  min-height: 700px;
+  /* min-height: 700px; */
+  height: 100vh;
 }
 
 #screen1 h1 {
