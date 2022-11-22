@@ -29,3 +29,13 @@ function git4()  {
 function others4()  {
   window.open('https://snoh6839.github.io/gangnam/');
 }
+
+
+
+function git5()  {
+  window.open('https://github.com/snoh6839/lambor.git');
+}
+
+function others5()  {
+  window.open('https://snoh6839.github.io/lambor/');
+}
