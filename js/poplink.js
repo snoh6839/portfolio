@@ -30,12 +30,19 @@ function others4()  {
   window.open('https://snoh6839.github.io/gangnam/');
 }
 
-
-
 function git5()  {
   window.open('https://github.com/snoh6839/lambor.git');
 }
 
 function others5()  {
   window.open('https://snoh6839.github.io/lambor/');
+}
+
+
+function git6()  {
+  window.open('https://github.com/snoh6839/ex1_sass_site.git');
+}
+
+function others6()  {
+  window.open('https://snoh6839.github.io/ex1_sass_site/');
 }
